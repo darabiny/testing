@@ -22,7 +22,7 @@ class Locator_Menu:
     LOCATOR_USERS_USER_ADD = (By.ID, "menuUserAdd")
     LOCATOR_MORE = (By.ID, "menuMore")
 
-# страница главная
+# страница главная и варианты
 class Locator_Main:
     LOCATOR_WELCOME = (By.TAG_NAME, "h3")
     LOCATOR_TEXT = (By.XPATH, "/html/body/div[2]/div[2]/div/p[1]")

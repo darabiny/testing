@@ -49,7 +49,7 @@ class SearchHelper_Authoriztion(BasePage):
         sleep(1)
         return self.find_element(Locator_Authorization.LOCATOR_ERROR_LOGIN_CROSS)
 
-# для главной страницы
+# для главной страницы и варианты
 class SearchHelper_Main(BasePage):
     def main(self):
         welcome = self.find_element(Locator_Main.LOCATOR_WELCOME)
