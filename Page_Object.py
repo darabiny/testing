@@ -139,22 +139,22 @@ class SearchHelper_User_Add(BasePage):
             search_field.send_keys(name)
         if gen == 'Женский': self.find_element(Locator_User_Add.LOCATOR_GENDER_2).click()
         if var1 == '1.2': self.find_element(Locator_User_Add.LOCATOR_V1_2).click()
-        if var2 == '':#0
+        if var2 == '':
             self.find_element(Locator_User_Add.LOCATOR_V2_1).click()
-        elif var2 == '2.1, 2.2, 2.3':#7
+        elif var2 == '2.1, 2.2, 2.3':
             self.find_element(Locator_User_Add.LOCATOR_V2_2).click()
             self.find_element(Locator_User_Add.LOCATOR_V2_3).click()
-        elif var2 == '2.2':#2
+        elif var2 == '2.2':
             self.find_element(Locator_User_Add.LOCATOR_V2_1).click()
             self.find_element(Locator_User_Add.LOCATOR_V2_2).click()
-        elif var2 == '2.3':#3
+        elif var2 == '2.3':
             self.find_element(Locator_User_Add.LOCATOR_V2_1).click()
             self.find_element(Locator_User_Add.LOCATOR_V2_3).click()
-        elif var2 == '2.1, 2.2':#4
+        elif var2 == '2.1, 2.2':
             self.find_element(Locator_User_Add.LOCATOR_V2_2).click()
-        elif var2 == '2.1, 2.3':#5
+        elif var2 == '2.1, 2.3':
             self.find_element(Locator_User_Add.LOCATOR_V2_3).click()
-        elif var2 == '2.2, 2.3':#6
+        elif var2 == '2.2, 2.3':
             self.find_element(Locator_User_Add.LOCATOR_V2_1).click()
             self.find_element(Locator_User_Add.LOCATOR_V2_2).click()
             self.find_element(Locator_User_Add.LOCATOR_V2_3).click()

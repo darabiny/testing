@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="285a8814-9982-4393-a303-bc1db7b9066b" name="Changes" comment="Add file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base_Page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOCATOR.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page_Object.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Object.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_auzorization_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_auzorization_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_more_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_more_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_user_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_user_add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_user_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_user_table.py" afterDir="false" />
-    </list>
+    <list default="true" id="285a8814-9982-4393-a303-bc1db7b9066b" name="Changes" comment="Add file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700486623226</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add file">
+      <created>1700688727185</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700688727185</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
