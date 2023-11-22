@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="285a8814-9982-4393-a303-bc1db7b9066b" name="Changes" comment="Add file" />
+    <list default="true" id="285a8814-9982-4393-a303-bc1db7b9066b" name="Changes" comment="Add file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOCATOR.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page_Object.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page_Object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_auzorization_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_auzorization_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_more_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_more_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_user_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_user_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_user_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_user_table.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,21 +47,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Данила/Desktop/pp&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_auzorization_page.test_authorization_page">
-    <configuration name="Python tests for test_auzorization_page.test_authorization_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pp" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_auzorization_page.test_authorization_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="Python tests for test_user_add.test_menu" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,7 +90,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_user_table.test_user_table" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_user_table.test_menu" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,17 +100,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_user_table.test_user_table&quot;" />
+      <option name="_new_target" value="&quot;test_user_table.test_menu&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_user_table.test_user_table_elements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user_table.test_user_table_elements&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_user_add.test_user_add_elements" />
         <item itemvalue="Python tests.Python tests for test_user_add.test_menu" />
         <item itemvalue="Python tests.Python tests for test_user_add.test_user_add" />
-        <item itemvalue="Python tests.Python tests for test_user_add.test_user_add_elements" />
-        <item itemvalue="Python tests.Python tests for test_auzorization_page.test_authorization_page" />
-        <item itemvalue="Python tests.Python tests for test_user_table.test_user_table" />
+        <item itemvalue="Python tests.Python tests for test_user_table.test_menu" />
+        <item itemvalue="Python tests.Python tests for test_user_table.test_user_table_elements" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700429154115</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add file">
+      <created>1700486623226</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700486623226</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

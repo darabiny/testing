@@ -1,32 +1,17 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-import pytest
 from Page_Object import SearchHelper, SearchHelper_Main
 
-# тесты страницы главной
-
-# фикстура для работы с браузером
-@pytest.fixture(scope="session")
-def browser():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    yield driver
-    driver.close()
-
-# тестируем состав меню на целостность
 def test_menu(browser):
     main_page = SearchHelper(browser)
-    main_page.go_to_site_main()
+    main_page.go_to_site_authorization()
+    main_page.go_to_main_menu()
     elements = main_page.menu_elements()
     for i in elements:
         assert i.is_displayed()
 
-
-
-# тестируем главную страницу на целостность
 def test_main_page(browser):
     main_page = SearchHelper_Main(browser)
-    main_page.go_to_site_main()
+    main_page.go_to_site_authorization()
+    main_page.go_to_main()
     welcome, text, wish, picture = main_page.main()
     assert welcome.is_displayed()
     assert welcome.text == 'Добро пожаловать!'

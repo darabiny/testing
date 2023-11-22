@@ -1,10 +1,5 @@
 from selenium.webdriver.common.by import By
 
-# здесь все локаторы которые я использую в скриптах
-# они разделены по классам, в зависимости от того к какой страничке принадлежат
-# постарался сделать говорящие значения, чтобы было понятней: что, куда и откуда идёт
-
-# страница авторизации
 class Locator_Authorization:
     LOCATOR_LOGIN = (By.ID, 'loginEmail')
     LOCATOR_PASSWORD = (By.ID, 'loginPassword')
@@ -13,7 +8,6 @@ class Locator_Authorization:
     LOCATOR_ERROR_PASSWORD = (By.XPATH, '//*[@id="KEKEKEKEKEKKEKE"]/p')
     LOCATOR_ERROR_LOGIN_CROSS = (By.CSS_SELECTOR, '.uk-alert-close')
 
-# локаторы меню которое находится в верху каждой странички, кроме авторизации
 class Locator_Menu:
     LOCATOR_AUTHORIZATION = (By.ID, "menuAuth")
     LOCATOR_MAIN = (By.ID, "menuMain")
@@ -22,14 +16,12 @@ class Locator_Menu:
     LOCATOR_USERS_USER_ADD = (By.ID, "menuUserAdd")
     LOCATOR_MORE = (By.ID, "menuMore")
 
-# страница главная и варианты
 class Locator_Main:
     LOCATOR_WELCOME = (By.TAG_NAME, "h3")
-    LOCATOR_TEXT = (By.XPATH, "/html/body/div[2]/div[2]/div/p[1]")
+    LOCATOR_TEXT = (By.TAG_NAME, "p")
     LOCATOR_WISH = (By.XPATH, "/html/body/div[2]/div[2]/div/p[2]")
     LOCATOR_PICTURE = (By.CSS_SELECTOR, '.uk-cover')
 
-# страница добавления пользователя
 class Locator_User_Add:
     LOCATOR_EMAIL = (By.ID, "dataEmail")
     LOCATOR_PASSWORD = (By.ID, "dataPassword")
@@ -46,11 +38,9 @@ class Locator_User_Add:
     LOCATOR_ERROR_LOGIN = (By.XPATH, '//*[@id="emailFormatError"]/p')
     LOCATOR_ERROR_NAME = (By.XPATH, '//*[@id="blankNameError"]/p')
     LOCATOR_ERROR_PASSWORD = (By.XPATH, '//*[@id="blankPasswordError"]/p')
-    LOCATOR_WINDOW = (By.XPATH, '/html/body/div[3]/div/div[1]')
-    LOCATOR_WINDOW_CSS = (By.CSS_SELECTOR, 'uk-modal')
-    LOCATOR_WINDOW_OK = (By.XPATH, '/html/body/div[3]/div/div[2]/button')
+    LOCATOR_WINDOW = (By.CSS_SELECTOR, '.uk-modal-body')
+    LOCATOR_WINDOW_OK = (By.CSS_SELECTOR, '.uk-button.uk-button-primary.uk-modal-close')
 
-# страница таблицы пользователей
 class Locator_User_Table:
     LOCATOR_TABLE = (By.ID, 'dataTable')
     LOCATOR_BUTTON = (By.ID, 'addUser')

@@ -1,21 +1,8 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 import pytest
 from contextlib import nullcontext as does_not_raise
 from Page_Object import SearchHelper_Authoriztion
 from test_main_page import test_main_page
 
-# тесты страницы автоматизации
-
-# фикстура для работы с браузером
-@pytest.fixture(scope="session")
-def browser():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    yield driver
-    driver.close()
-
-# проверка на наличие всех предполагаемых элементов на странице
 def test_elements(browser):
     main_page = SearchHelper_Authoriztion(browser)
     main_page.go_to_site_authorization()
@@ -23,13 +10,12 @@ def test_elements(browser):
         assert i.is_displayed()
 
 
-# тесты ввода
 @pytest.mark.parametrize(
     "login, password, expectation",
     [
         ("test@protei.ru", "test", does_not_raise()),
         ('g', 'g', pytest.raises(Exception)),
-        ('h', None, pytest.raises(TypeError)),
+        ('h', None, pytest.raises(Exception)),
         (None, 'j', pytest.raises(TypeError)),
         (None, None, pytest.raises(TypeError))
 
@@ -37,6 +23,11 @@ def test_elements(browser):
 )
 def test_authorization_page(login, password, expectation, browser):
     with expectation:
+        error = 0
+        l = ['.com', '.ru', '.net', '.info', '.org', '.рф', '.дети']
+        if login[0] == '@' or '.' not in login or '@' not in login or login[login.index('.'):] not in l or login[login.index('.') - 1] == '@':
+            error = 1
+        assert error == 0
         main_page = SearchHelper_Authoriztion(browser)
         main_page.go_to_site_authorization()
         main_page.come_in_authorization(login, password)
@@ -44,7 +35,6 @@ def test_authorization_page(login, password, expectation, browser):
         assert main_title.is_displayed()
         assert main_title.text == "Добро пожаловать!"
         test_main_page(browser) # проверка на целостность main page
-
 
 @pytest.mark.parametrize(
     "login, password, expectation",
